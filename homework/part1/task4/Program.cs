@@ -63,9 +63,10 @@ int temp2 = 0;
                     temp2++;
                     if (str[i] == ' '){ break; }
                     temp += str[i];
-                }  
+                }          
                 arr[j] = temp;
                 // System.Console.WriteLine(temp);
+                //Для отслеживания
                 temp = "" ;
                  }
 
