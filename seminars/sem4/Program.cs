@@ -1,2 +1,39 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿// Задайте одномерный массив, заполненный случайными
+// числами. Определите количество простых чисел в этом
+// массиве.
+// Примеры
+// [1 3 4 19 3] => 2
+// [4 3 4 1 9 5 21 13] => 3
+
+bool Prime(int num)
+{
+    for (int i = 0; i < num / 2; i++)
+    {
+        if (num % i == 0) { return false; }
+    }
+}
+
+
+
+// Заполните массив на N (вводится с консоли, не более 8)
+// случайных целых чисел от 0 до 9.
+// Сформируйте целое число, которое будет состоять из цифр из
+// массива. Старший разряд числа находится на 0-м индексе,
+// младший – на последнем.
+// Пример
+// [1 3 2 4 2 3] => 132423
+// [2 3 1] => 231
+
+// int ConvertToNum(int[] array)
+// {
+
+//     int res = 0'
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         res = res + array[i] * (int)Math.Pow(10, array.Length - 1 - i)
+//     }
+
+//     return res;
+// }
+
+// System.Console.WriteLine(ConvertToNum);

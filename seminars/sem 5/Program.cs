@@ -92,7 +92,7 @@ void PrintMatrix1(int[] array)
 
 int[,] Arr = CreateMatrix(3, 5, 1, 1);
 
-PrintMatrix(Arr);
+// PrintMatrix(Arr);
 // PrintMatrix(Arr);
 
 // Sq(Arr);
@@ -130,4 +130,16 @@ int[] MiddleArr(int[,] array)
 
 }
 
-PrintMatrix1(MiddleArr(Arr));
+// PrintMatrix1(MiddleArr(Arr));
+
+
+
+int[,] numbers = new int[,] {
+    {1, 2, 3, 4},
+    {5, 6, 7, 8},
+    {9, 10, 11, 12}
+}; 
+
+System.Console.WriteLine(numbers.GetLength(1));
+
+System.Console.WriteLine(numbers[2,0]);
