@@ -20,7 +20,7 @@
 
 // bool flag = true;
 
-// bool PoliCheck(string word) { 
+// bool PoliCheck(string word) {
 // for(int i = 0; i < word.Length - 1; i++) {
 //     if(word[i] == word[word.Length - 1 - i]) {
 //         flag = true;
@@ -38,46 +38,48 @@
 
 string meesege = "for the Motherland";
 
+string Versa(string str)
+{
+    int spaces = 0;
+    string temp = string.Empty;
 
+    for (int i = 0; i < str.Length; i++)
+    {
+        if (str[i] == ' ')
+        {
+            spaces++;
+        }
+    }
 
+    string[] arr = new string[spaces + 1];
 
-string Versa(string str){
-        int spaces = 0;
-        string temp = string.Empty;
-
-                for(int i = 0; i < str.Length; i++)
-                {
-                    if (str[i] == ' '){ spaces++; }
-                }   
-
-                string[] arr = new string[spaces + 1];
-
-
-int temp2 = 0;
-            for(int j = 0; j < arr.Length; j++) 
-
-           {     
-            
-            for(int i = temp2; i < str.Length; i++)
-                {
-                    temp2++;
-                    if (str[i] == ' '){ break; }
-                    temp += str[i];
-                }          
-                arr[j] = temp;
-                // System.Console.WriteLine(temp);
-                //Для отслеживания
-                temp = "" ;
-                 }
-
+    int temp2 = 0;
+    for (int j = 0; j < arr.Length; j++)
+    {
+        for (int i = temp2; i < str.Length; i++)
+        {
+            temp2++;
+            if (str[i] == ' ')
+            {
+                break;
+            }
+            temp += str[i];
+        }
+        arr[j] = temp;
+        // System.Console.WriteLine(temp);
+        //Для отслеживания
         temp = "";
+    }
 
-        for(int i = 0; i < arr.Length;i++){
-            temp += arr[arr.Length-1-i];
-            temp = temp + " ";
-        }
-return temp;
-        }
+    temp = "";
 
-        string a = Versa(meesege);
+    for (int i = 0; i < arr.Length; i++)
+    {
+        temp += arr[arr.Length - 1 - i];
+        temp = temp + " ";
+    }
+    return temp;
+}
+
+string a = Versa(meesege);
 System.Console.WriteLine(Versa(meesege));
