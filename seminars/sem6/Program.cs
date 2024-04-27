@@ -57,3 +57,11 @@ System.Console.WriteLine("Новая строка: " + nS);
 // Пример
 // “hello” => 2
 // “world” => 1
+
+System.Console.WriteLine("Слово на английском:");
+
+string word = Console.ReadLine();
+
+int CalculLetters(string str){
+    if(char)
+}
